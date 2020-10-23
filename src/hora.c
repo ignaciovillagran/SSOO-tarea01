@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 	int count=0;
 	signal(SIGTERM, signal_handler);   
 	signal(SIGINT, signal_handler);  
-	signal(SIGUSR1, hora());
+	signal(SIGUSR1, hora);
 
 	while(++count) { 
 		sleep(1);
