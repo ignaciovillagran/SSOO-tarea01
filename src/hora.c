@@ -3,7 +3,9 @@
 #include<signal.h>
 #include<stdlib.h>
 
-void 
+void hora(){
+	printf("Hola, aqui te dire la hora.\n");
+}
 
 void signal_handler( int signal_num ) { 
 	static int trials = 0;
@@ -23,6 +25,7 @@ int main(int argc, char const *argv[])
 	int count=0;
 	signal(SIGTERM, signal_handler);   
 	signal(SIGINT, signal_handler);  
+	signal(SIGUSR1, hora());
 
 	while(++count) { 
 		sleep(1);
