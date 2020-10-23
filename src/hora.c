@@ -3,6 +3,8 @@
 #include<signal.h>
 #include<stdlib.h>
 
+void 
+
 void signal_handler( int signal_num ) { 
 	static int trials = 0;
 	
