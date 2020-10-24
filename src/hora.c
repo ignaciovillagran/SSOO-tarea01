@@ -31,7 +31,7 @@ void signal_handler( int signal_num ) {
 
   	//Aqui se especifica que se necesita 2 veces la llamada para salir exitosamente
 	if(trials == 2){
-		exit(signal_num);  
+		exit(signal_num);   
 	} 
 } 
 
